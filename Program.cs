@@ -8,7 +8,7 @@ class InchesToCentimeters
         Write("Enter the measurement in inches: ");
         double inches = Convert.ToDouble(ReadLine());
         double centimeters = inches * cpi;
-        WriteLine($"{inches} inches is as big as {centimeters} centimeters.");
+        WriteLine($"{inches} inches is {centimeters} centimeters.");
     }
 }
 
