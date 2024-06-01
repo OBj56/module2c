@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using static System.Console;
+class InchesToCentimeters
+{
+    static void Main()
+    {
+        const double cpi = 2.54;
+        Write("Enter the measurement in inches: ");
+        double inches = Convert.ToDouble(ReadLine());
+        double centimeters = inches * cpi;
+        WriteLine($"{inches} inches is as big as {centimeters} centimeters.");
+    }
+}
+
